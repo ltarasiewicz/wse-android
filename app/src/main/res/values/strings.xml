@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WSE</string>
+    <string name="reset">Reset</string>
+    <string name="kmh">km/h</string>
+    <string name="ms">m/s</string>
+    <string name="swap_unit_btn">Swap Unit</string>
+    <string name="helloPrefix">Hello,</string>
+    <string name="placeholder120">120</string>
+    <string name="locationHeading">Location</string>
+    <string name="placeholderLocationData">location data</string>
+    <string name="heading_select_acceleration_unit">Select Acceleration Unit</string>
+    <string name="label_km_h">km/h</string>
+    <string name="label_m_s">m/s</string>
+    <string name="heading_select_location_data_decimal_precision">Decimal precision (0 to 10)</string>
+    <string name="button_go_to_car_dashboard">Go to car dashboard</string>
+    <string name="heading_what_is_your_name">What is your name?</string>
+    <string name="text_placeholder_anonymous">Anonymous</string>
+    <string name="heading_select_dashboard_theme">Select Dashboard Theme</string>
+    <string name="label_light">Light</string>
+    <string name="label_dark">Dark</string>
+</resources>

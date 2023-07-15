@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel" type="com.example.wse.types.DashboardSettings"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="false"
+        tools:context=".CarDashboard">
+
+        <TextView
+            android:id="@+id/helloText"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:text="@string/helloPrefix"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:text="@{viewModel.userName}"
+            android:textAlignment="textStart"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/swapSpeedUnit"
+            android:layout_width="135dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/swap_unit_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speedUnitLabel" />
+
+        <TextView
+            android:id="@+id/speedUnitLabel"
+            android:layout_width="135dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            android:text="@{viewModel.accelerationUnitString}"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speedDisplay" />
+
+        <TextView
+            android:id="@+id/speedDisplay"
+            android:layout_width="135dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/placeholder120"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helloText" />
+
+        <TextView
+            android:id="@+id/locationDataLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/locationHeading"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swapSpeedUnit" />
+
+        <TextView
+            android:id="@+id/locationData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/placeholderLocationData"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationDataLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
